@@ -1,5 +1,5 @@
 # Ketfinance
-<p> тестовый домен:  # https://u133935.test-handyhost.ru/ </p>
+<p> тестовый домен:  https://u133935.test-handyhost.ru/  </p>
 Сайт для группы финансовых организаций, работающей в сфере залогового кредитования
 <div  id="ladesign_description" align="center" >
   
