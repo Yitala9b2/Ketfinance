@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>Контакты</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.css?_v=20220920163414">
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="200" data-scroll-show="300" class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<li class="menu__item_logo">
+						<a class="logo gopage" href="index.html" class="">
+							<div class="logo_img">
+								<img src="img/logo.svg" alt="">
+								<!-- <img src="img/tg.svg" alt=""> -->
+							</div>
+							<span>КеmьФинанс</span>
+						</a>
+					</li>
+					<div class="menu__item_central">
+						<div class="menu__item_central_top">
+							<div class="menu__item_city_parent">
+								<a href="#" class="menu__item_city">
+									<input id="cityTopInput" disabled value="" type="text">
+								</a>
+								<div class="menu__item_city_sublist">
+									<ul>
+										<li class="city_subli">Томск</li>
+										<li class="city_subli">Нижний Новгород</li>
+										<li class="city_subli">Липецк</li>
+										<li class="city_subli">Хабаровск</li>
+										<li class="city_subli">Улан Удэ</li>
+										<li class="city_subli">Казань</li>
+										<li class="city_subli">Кемерово</li>
+										<li class="city_subli">Магадан</li>
+										<li class="city_subli">Санкт-Петербург</li>
+										<li class="city_subli">Красноярск</li>
+										<li class="city_subli">Уфа</li>
+										<li class="city_subli">Рязань</li>
+										<li class="city_subli">Новосибирск</li>
+										<li class="city_subli">Югра</li>
+										<li class="city_subli">Челябинск</li>
+										<li class="city_subli">Саратов</li>
+										<li class="city_subli">Якутск</li>
+										<li class="city_subli">Ставрополь</li>
+									</ul>
+								</div>
+							</div>
+							<div data-da=".menu__list, 640, 99" class="menu__item_linkphone">
+								<div class="get_link">
+									<a data-popup="#popup-calculator" href="#">Получить займ</a>
+								</div>
+								<div class="phone_cont">
+									<a class="phone" href="">
+										<input id="phoneInput" disabled value="" type="text">
+										<span>звонок бесплатный</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="about.html" class="menu__link">О нас</a>
+									<span class="menu__arrow"></span>
+									<ul class="menu__sub-list">
+										<li class="menu__sub-item"><a href="about.html#about" class="menu__sub-link">О компании</a></li>
+										<li class="menu__sub-item"><a href="about.html#news1" class="menu__sub-link">Новости</a></li>
+										<li class="menu__sub-item"><a href="about.html#docum" class="menu__sub-link">Документы</a></li>
+										<li class="menu__sub-item"><a href="about.html#quest" class="menu__sub-link">Вопросы и
+												ответы</a></li>
+										<li class="menu__sub-item"><a href="about.html#certi" class="menu__sub-link">Лицензии и
+												сертификаты</a></li>
+									</ul>
+								</li>
+								<li class="menu__item">
+									<a href="loan.html" class="menu__link">Займы</a>
+									<span class="menu__arrow"></span>
+									<ul class="menu__sub-list">
+										<li class="menu__sub-item"><a href="loan.html#priva" class="menu__sub-link">Частным лицам</a>
+										</li>
+										<li class="menu__sub-item"><a href="loan.html#busin" class="menu__sub-link">Бизнесу</a></li>
+									</ul>
+								</li>
+								<li class="menu__item hot">
+									<a href="#" class="menu__link">Франшиза</a>
+									<span class="menu__arrow"></span>
+									<ul class="menu__sub-list"></ul>
+								</li>
+								<li class="menu__item">
+									<a href="contacts.html" class="menu__link">Контакты</a>
+									<span class="menu__arrow"></span>
+									<ul class="menu__sub-list"></ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<li class="menu__item_socials" data-da=".menu__list, 640">
+						<a href="https://telegram.org/">
+							<img src="img/tg.svg" alt="">
+						</a>
+						<a href="https://vk.com/">
+							<img src="img/vk.svg" alt="">
+						</a>
+						<a href="https://www.whatsapp.com/">
+							<img src="img/wha.svg" alt="">
+						</a>
+
+					</li>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+				<div data-goto=".wrapper" data-goto-top="0" class="goto_top"></div>
+			</div>
+		</header>
+		<main class="main main_contacts">
+			<div class="black_bg">
+				<div class="main__container">
+					<!-- через JS вставлен mapblock  -->
+					<div class="payment_details">
+						<div class="main_title main_title_white">
+							Контакты <br>
+							и реквизиты для оплаты
+						</div>
+						<div class="payment_links">
+							<div class="payment_link">
+								<div class="payment_link_title">
+									<span id="paytitle"></span>
+								</div>
+								<div class="payment_link_inn">
+									<span id="payinn"></span>
+								</div>
+								<div class="payment_link_bik">
+									<span id="paybik"></span>
+								</div>
+								<div class="payment_link_rschet">
+									<span id="payrschet"></span>
+								</div>
+								<div class="payment_link_link">
+									<a href="">Все способы оплаты</a>
+								</div>
+							</div>
+							<!-- <div class="payment_link">
+								<div class="payment_link_title">
+									ООО МКК «ТОЯН»
+								</div>
+								<div class="payment_link_link">
+									<a href="">Все способы оплаты</a>
+								</div>
+							</div> -->
+						</div>
+					</div>
+					<div class="current_city">
+						<div class="city_name">
+							<p>Текущий город</p>
+							<span id="citySpan"></span>
+						</div>
+						<div class="city_phone">
+							<p>Телефон</p>
+							<a class="phone" href="">
+								<span id="phoneSpan"></span>
+							</a>
+						</div>
+						<div class="city_location">
+							<p>Адрес</p>
+							<span id="locationSpan"></span>
+						</div>
+					</div>
+					<div class="branches_block">
+						<div class="main_title main_title_white">
+							Филиалы
+						</div>
+						<div class="branches">
+							<div class="branch">
+								<div class="branch_name">Томск</div>
+								<div class="branch_phone"><a href="tel:+78002225363">+7-800-222-53-63</a></div>
+								<!-- <div class="branch_phone"><a href="tel:+78002225363">+7-800-222-53-63</a></div> -->
+								<div class="branch_location">ул. Старо – Деповская, 37, этаж 1, офис 2</div>
+							</div>
+							<div class="branch">
+								<div class="branch_name">Югра</div>
+								<div class="branch_phone"><a href="tel:+78002225363">+7-800-222-53-63</a></div>
+								<div class="branch_location">ул. Старо – Деповская, 37, этаж 1, офис 2</div>
+							</div>
+							<div class="branch">
+								<div class="branch_name">Рязань</div>
+								<div class="branch_phone"><a href="tel:+78002225363">+7-800-222-53-63</a></div>
+								<div class="branch_location">Ул. Маяковского 1А, 325оф</div>
+							</div>
+							<div class="branch">
+								<div class="branch_name">Липецк</div>
+								<div class="branch_phone"><a href="tel:+78002225363">+7-800-222-53-63</a></div>
+								<div class="branch_location">Ул. Фрунзе, д. 34, помещ. 38</div>
+							</div>
+							<div class="branch">
+								<div class="branch_name">Ставрополь</div>
+								<div class="branch_phone"><a href="tel:+78002225363">+7-800-222-53-63</a></div>
+								<div class="branch_location">Ул. Пирогова 42/1, офис 44</div>
+							</div>
+							<div class="branch">
+								<div class="branch_name">Магадан</div>
+								<div class="branch_phone"><a href="tel:+78002225363">+7-800-222-53-63</a></div>
+								<div class="branch_location">Пр. Ленина д-3, офис 258</div>
+							</div>
+							<div class="branch">
+								<div class="branch_name">Саратов</div>
+								<div class="branch_phone"><a href="tel:+78002225363">+7-800-222-53-63</a></div>
+								<div class="branch_location">Ул. Набережная космонавтов д 8</div>
+							</div>
+							<div class="branch">
+								<div class="branch_name">Казань </div>
+								<div class="branch_phone"><a href="tel:+78002225363">+7-800-222-53-63</a></div>
+								<div class="branch_location">РТ г. Казань, ул Бондаренко, д 7, пом 1006</div>
+							</div>
+							<div class="branch">
+								<div class="branch_name">Улан-Удэ</div>
+								<div class="branch_phone"><a href="tel:+78002225363">+7-800-222-53-63</a></div>
+								<div class="branch_location">Ул. Борсоева 7а, офис 215</div>
+							</div>
+							<div class="branch">
+								<div class="branch_name">Новосибирск</div>
+								<div class="branch_phone"><a href="tel:+78002225363">+7-800-222-53-63</a></div>
+								<div class="branch_location">Ул. Карла Маркса д 30,оф 204</div>
+							</div>
+							<div class="branch">
+								<div class="branch_name">Кемерово</div>
+								<div class="branch_phone"><a href="tel:+78002225363">+7-800-222-53-63</a></div>
+								<div class="branch_location">Ул. Терешковой 54</div>
+							</div>
+							<div class="branch">
+								<div class="branch_name">Якутск</div>
+								<div class="branch_phone"><a href="tel:+78002225363">+7-800-222-53-63</a></div>
+								<div class="branch_location">1. Ул. Курашова, 30/5г, ст 2 офис 9 <br>
+									2. ТЦ Кристалл п. Нижний Бестях,
+									ул. Ленина 11
+								</div>
+							</div>
+							<div class="branch">
+								<div class="branch_name">Красноярск</div>
+								<div class="branch_phone"><a href="tel:+78002225363">+7-800-222-53-63</a></div>
+								<div class="branch_location">Ул. Караульная,88,офис3-36</div>
+							</div>
+							<div class="branch">
+								<div class="branch_name">Уфа</div>
+								<div class="branch_phone"><a href="tel:+78002225363">+7-800-222-53-63</a></div>
+								<div class="branch_location">ул. Академика Сулейманова, 12 офис 251</div>
+							</div>
+							<div class="branch">
+								<div class="branch_name">Челябинск</div>
+								<div class="branch_phone"><a href="tel:+78002225363">+7-800-222-53-63</a></div>
+								<div class="branch_location">Курчатовский район, Чайковского 20Б, 2 этаж, офис 19.</div>
+							</div>
+							<div class="branch">
+								<div class="branch_name">Нижний Новгород</div>
+								<div class="branch_phone"><a href="tel:+78002225363">+7-800-222-53-63</a></div>
+								<div class="branch_location">ул. Белинского дом 60 «А», пом. П1</div>
+							</div>
+							<div class="branch">
+								<div class="branch_name">Санкт-Петербург</div>
+								<div class="branch_phone"><a href="tel:+78002225363">+7-800-222-53-63</a></div>
+								<div class="branch_location">ул. Салова, д. 70 литера А, помещ. 310</div>
+							</div>
+							<div class="branch">
+								<div class="branch_name">Хабаровск</div>
+								<div class="branch_phone"><a href="tel:+78002225363">+7-800-222-53-63</a></div>
+								<div class="branch_location">Проспект 60-летия Октября 170а, офис 202 Помещ. 11</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="black_bg">
+				<div class="footer__container">
+					<div class="map_block">
+						<div class="contforafter">
+							<div class="map_block_img">
+								<img src="img/map.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="footer_top">
+						<div class="first_block">
+							<div class="first_block_top">
+								<div class="main_title main_title_white ">
+									Всегда рады видеть вас <br> в нашем офисе
+								</div>
+								<a class="linkunederline linkunederline_white" href="#">Реквизиты для оплаты</a>
+							</div>
+							<div class="first_block_middle">
+								<div class="changeable_block">
+									<div class="phone_cont phone_cont_white">
+										<a class="phone" href="tel:">
+											<input id="phoneInput" disabled value="" type="text">
+											<span>звонок бесплатный</span>
+										</a>
+									</div>
+									<div class="location_cont">
+										<span class="location_span">
+											<span id="citySpan"></span> , <span id="locationSpan"></span>
+										</span>
+									</div>
+								</div>
+								<div class="const_block">
+									<div class="phones_block">
+										<a href="tel:+79234033323" class="phone">8 (923) 403-33-23</a>
+										<a href="tel:+73822482000" class="phone">8 (3822) 482-000</a>
+									</div>
+									<div class="timework_block">
+										<div class="timework_block_title">График работы:</div>
+										<div class="timework_block_text">
+											Местное время <br>
+											Пн-пт с 9.00 до 20.00 <br>
+											Сб, вск - с 10.00 до 18.00
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="second_block">
+							<div class="footer_logo">
+								<img src="img/logowhite.svg" alt="">
+							</div>
+							<div class="footer_inn">
+								<span id="paytitle"> </span>
+								<span id="payinn"> </span>
+								<span id="paybik"> </span>
+								<span id="payrschet"> </span>
+
+							</div>
+							<div class="footer_privacy">
+								Оставляя свои контактные данные
+								на сайте, пользователь дает свое согласие на получение информации
+								о компании ООО «Кеть Финанс», а также партнеров компании.
+							</div>
+						</div>
+					</div>
+					<div class="footer_bottom">
+						<div class="footer_bottom_links">
+							<a class="linkunederline linkunederline_white" href="#">Служба финансового уполномоченного</a>
+							<a class="linkunederline linkunederline_white gopage" href="documents.html">Полный список документов</a>
+						</div>
+						<div class="footer_bottom_survey">
+							<div class="servey_text">
+								В целях улучшения качества обслуживания предлагаем Вам пройти опрос. Мы ценим Ваше мнение.
+							</div>
+							<div class="servey_btn">
+								<a href="#">Пройти опрос</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</footer>
+	</div>
+	<div id="city" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__text">
+					<div class="cities_popup popup_tb">
+						<div class="popup_top">
+							<div class="main_title">
+								Выберите свой город
+							</div>
+							<div class="popup_text">
+								Если вашего города нет в списке, выберете ближайший к вам город, где есть филиал компании Кеть
+								Финанс
+							</div>
+						</div>
+						<div class="popup_bottom">
+							<ul class="cities_ul">
+
+								<li data-default id="Томск" data-phonemin="+78002225361" data-phonemax="8 (800) 222-53-61" data-paytitle="Т ООО «Кеть Финанс»" data-payinn="Т ИНН: 7017473625" data-paybik="Т БИК: 046902606" data-payrschet="Т Р/счет: 40701810364000000075" data-location="ул. Старо – Деповская, 37, этаж 1, офис 2" class="city_li">Томск</li>
+								<li id="Кемерово" data-phonemin="+78002225362" data-phonemax="8 (800) 222-53-62" data-paytitle="К ООО «Кеть Финанс»" data-payinn="К ИНН: 7017473625" data-paybik="К БИК: 046902606" data-payrschet="К Р/счет: 40701810364000000075" data-location="Ул. Терешковой 54" class="city_li">Кемерово</li>
+								<li id="Новосибирск" data-phonemin="+78002225363" data-phonemax="8 (800) 222-53-63" data-paytitle="Н ООО «Кеть Финанс»" data-payinn="Н ИНН: 7017473625" data-paybik="Н БИК: 046902606" data-payrschet="Н Р/счет: 40701810364000000075" data-location="Ул. Карла Маркса д 30,оф 204" class="city_li">Новосибирск</li>
+								<li id="Нижний Новгород" data-phonemin="+78002225364" data-phonemax="8 (800) 222-53-64" data-paytitle="Н ООО «Кеть Финанс»" data-payinn="Н ИНН: 7017473625" data-paybik="Н БИК: 046902606" data-payrschet="Н Р/счет: 40701810364000000075" data-location="ул. Белинского дом 60 «А», пом. П1" class="city_li">Нижний Новгород</li>
+								<li id="Магадан" data-phonemin="+78002225365" data-phonemax="8 (800) 222-53-65" data-paytitle="М ООО «Кеть Финанс»" data-payinn="М ИНН: 7017473625" data-paybik="М БИК: 046902606" data-payrschet="М Р/счет: 40701810364000000075" data-location="Пр. Ленина д-3, офис 258" class="city_li">Магадан</li>
+								<li id="Югра" data-phonemin="+78002225366" data-phonemax="8 (800) 222-53-66" data-paytitle="Ю ООО «Кеть Финанс»" data-payinn="Ю ИНН: 7017473625" data-paybik="Ю БИК: 046902606" data-payrschet="Ю Р/счет: 40701810364000000075" data-location="ул. Старо – Деповская, 37, этаж 1, офис 2" class="city_li">Югра</li>
+								<li id="Липецк" data-phonemin="+78002225367" data-phonemax="8 (800) 222-53-67" data-paytitle="Л ООО «Кеть Финанс»" data-payinn="Л ИНН: 7017473625" data-paybik="Л БИК: 046902606" data-payrschet="Л Р/счет: 40701810364000000075" data-location="Ул. Фрунзе, д. 34, помещ. 38" class="city_li">Липецк</li>
+								<li id="Санкт-Петербург" data-phonemin="+78002225368" data-phonemax="8 (800) 222-53-68" data-paytitle="П ООО «Кеть Финанс»" data-payinn="П ИНН: 7017473625" data-paybik="П БИК: 046902606" data-payrschet="П Р/счет: 40701810364000000075" data-location="ул. Салова, д. 70 литера А, помещ. 310" class="city_li">Санкт-Петербург</li>
+								<li id="Челябинск" data-phonemin="+78002225369" data-phonemax="8 (800) 222-53-69" data-paytitle="Ч ООО «Кеть Финанс»" data-payinn="Ч ИНН: 7017473625" data-paybik="Ч БИК: 046902606" data-payrschet="Ч Р/счет: 40701810364000000075" data-location="Курчатовский район, Чайковского 20Б, 2 этаж, офис 19." class="city_li">Челябинск</li>
+								<li id="Хабаровск" data-phonemin="+78002225360" data-phonemax="8 (800) 222-53-60" data-paytitle="Х ООО «Кеть Финанс»" data-payinn="Х ИНН: 7017473625" data-paybik="Х БИК: 046902606" data-payrschet="Х Р/счет: 40701810364000000075" data-location="Проспект 60-летия Октября 170а, офис 202 Помещ. 11" class="city_li">Хабаровск</li>
+								<li id="Красноярск" data-phonemin="+78002225370" data-phonemax="8 (800) 222-53-70" data-paytitle="К ООО «Кеть Финанс»" data-payinn="К ИНН: 7017473625" data-paybik="К БИК: 046902606" data-payrschet="К Р/счет: 40701810364000000075" data-location="Ул. Караульная,88,офис3-36" class="city_li">Красноярск</li>
+								<li id="Саратов" data-phonemin="+78002225371" data-phonemax="8 (800) 222-53-71" data-paytitle="С ООО «Кеть Финанс»" data-payinn="С ИНН: 7017473625" data-paybik="С БИК: 046902606" data-payrschet="С Р/счет: 40701810364000000075" data-location="Ул. Набережная космонавтов д 8" class="city_li">Саратов</li>
+								<li id="Улан Удэ" data-phonemin="+78002225372" data-phonemax="8 (800) 222-53-72" data-paytitle="У ООО «Кеть Финанс»" data-payinn="У ИНН: 7017473625" data-paybik="У БИК: 046902606" data-payrschet="У Р/счет: 40701810364000000075" data-location="Ул. Борсоева 7а, офис 215" class="city_li">Улан Удэ</li>
+								<li id="Уфа" data-phonemin="+78002225373" data-phonemax="8 (800) 222-53-73" data-paytitle="У ООО «Кеть Финанс»" data-payinn="У ИНН: 7017473625" data-paybik="У БИК: 046902606" data-payrschet="У Р/счет: 40701810364000000075" data-location="ул. Академика Сулейманова, 12 офис 251" class="city_li">Уфа</li>
+								<li id="Якутск" data-phonemin="+78002225374" data-phonemax="8 (800) 222-53-74" data-paytitle="Я ООО «Кеть Финанс»" data-payinn="Я ИНН: 7017473625" data-paybik="Я БИК: 046902606" data-payrschet="Я Р/счет: 40701810364000000075" data-location="1. Ул. Курашова, 30/5г, ст 2 офис 9 <br> 2. ТЦ Кристалл п. Нижний Бестях,	ул. Ленина 11" class="city_li">Якутск</li>
+								<li id="Казань" data-phonemin="+78002225375" data-phonemax="8 (800) 222-53-75" data-paytitle="К ООО «Кеть Финанс»" data-payinn="К ИНН: 7017473625" data-paybik="К БИК: 046902606" data-payrschet="К Р/счет: 40701810364000000075" data-location="ул Бондаренко, д 7, пом 1006" class="city_li">Казань</li>
+								<li id="Рязань" data-phonemin="+78002225376" data-phonemax="8 (800) 222-53-76" data-paytitle="Р ООО «Кеть Финанс»" data-payinn="Р ИНН: 7017473625" data-paybik="Р БИК: 046902606" data-payrschet="Р Р/счет: 40701810364000000075" data-location="Ул. Маяковского 1А, 325оф" class="city_li">Рязань</li>
+								<li id="Ставрополь" data-phonemin="+78002225377" data-phonemax="8 (800) 222-53-77" data-paytitle="С ООО «Кеть Финанс»" data-payinn="С ИНН: 7017473625" data-paybik="С БИК: 046902606" data-payrschet="С Р/счет: 40701810364000000075" data-location="Ул. Пирогова 42/1, офис 44" class="city_li">Ставрополь</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<button data-close type="button" class="popup__close">
+
+				</button>
+			</div>
+		</div>
+	</div>
+	<div id="reviewpopup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__text">
+					<div class="review_popup popup_tb">
+						<div class="popup_top">
+							<div class="main_title">
+								Заполните форму
+							</div>
+							<!-- <div class="popup_text">
+						
+						</div> -->
+						</div>
+						<div class="popup_bottom">
+							<div class="review_form">
+								<form action="#" method="post" enctype="multipart/form-data">
+									<div class="boxforinp">
+										<input class="" data-required placeholder="Имя" autocomplete="off" type="text" data-error="Ошибка">
+									</div>
+									<div class="boxforinp">
+										<textarea name="" placeholder="Ваш отзыв или ссылка на видео" data-required id="" cols="" rows="2" data-error="Ошибка"></textarea>
+									</div>
+									<div class="checkbox_block">
+										<input type="checkbox" class="real" data-required="" data-error="Необходимо подтверждение">
+										<p>Да, я реальный человек</p>
+									</div>
+									<input class="btn" type="submit" value="Отправить">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button data-close type="button" class="popup__close">
+
+				</button>
+			</div>
+		</div>
+	</div>
+	<div id="popup-calculator" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__text form-text">
+					<div class="form-text__title">
+						Оставьте свой номер <br>
+						телефона
+					</div>
+					<div class="form-text__subtitle">
+						Мы свяжемся с вами в ближайшее время
+					</div>
+					<form action="#" method="POST" data-dev data-validate method="POST" class="feedback__form calculator-form">
+						<div class="calculator-form__inputs">
+							<div class="calculator-form__inputs-flex"><input type="text" class="form__inputs" name="formPtsEstate" id="formPtsEstate"><label for="formPtsEstate"> - категория</label></div>
+							<div class="calculator-form__inputs-flex"><input type="text" class="form__inputs" name="formTotal" id="formTotal"><label for="formTotal"> - итоговая сумма</label></div>
+							<div class="calculator-form__inputs-flex"><input type="text" class="form__inputs" name="formTerm" id="formTerm"><label for="formTerm"> - срок</label></div>
+							<div class="calculator-form__inputs-flex"><input type="text" class="form__inputs" name="formDeposit" id="formDeposit"><label for="formDeposit"> - залог</label></div>
+							<div class="calculator-form__inputs-flex"><input type="text" class="form__inputs" name="formPay" id="formPay"><label for="formDeposit"> - ежемесячный платеж</label></div>
+						</div>
+						<div class="calculator-form">
+							<div class="calculator-form__telephone-line telephone-line">
+								<span class="calculator-form__title title-form">Ваш телефон</span>
+								<input class="calculator-form__telephone telephone-form" data-required="" data-error="Введите Телефон" autocomplete="off" type="tel" placeholder="+7 (987) 654 - 32 - 10 " name="tel">
+							</div>
+							<div class="calculator-form__real-checkbox">
+								<!-- <div class="calculator-form__real-check">
+								<input type="checkbox" class="real" data-required="" data-error="Необходимо подтверждение"
+									id="real2">
+								<label for="real2">Да, я реальный человек</label>
+							</div> -->
+								<div class="checkbox_block">
+									<input type="checkbox" class="real" data-required="" data-error="Необходимо подтверждение">
+									<p>Да, я реальный человек</p>
+									<p>Нажимая на кнопку, вы соглашаетесь с<br>
+										<a data-popup="#privacypolice" href="#"> условиями политики конфиденциальности</a>
+									</p>
+								</div>
+
+							</div>
+							<div class="calculator-form__confirm confirm">
+								<input type="submit" class="calculator-form__button form-button">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="privacypolice" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__text">
+					<div class="privacypolicy_popup popup_tb">
+						<div class="popup_top">
+							<div class="main_title">
+								Условия политики конфиденциальности
+							</div>
+						</div>
+						<div class="popup_bottom">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatum necessitatibus alias
+							praesentium libero perspiciatis reiciendis dicta illo aliquam fuga incidunt blanditiis, tempore qui
+							error inventore! Voluptatum temporibus nobis soluta rerum molestiae repellendus a laboriosam quas
+							quia. Facere quam, excepturi tenetur aperiam velit optio soluta enim et deserunt dolore pariatur
+							deleniti at magni laboriosam! Blanditiis ut illum alias iusto itaque beatae excepturi eos repellendus
+							obcaecati veritatis, dicta adipisci eum aliquid atque quidem consectetur sunt. Odit nesciunt in
+							dignissimos, omnis labore exercitationem. Culpa et minus laboriosam esse veritatis cum voluptatibus,
+							unde, earum voluptate porro, repellendus expedita totam aspernatur aut labore? Quibusdam aliquam
+							velit, est fugiat libero facilis ducimus facere alias exercitationem doloremque quidem placeat porro
+							enim maiores ipsam molestias dolores voluptatum! Fuga repellendus ut, porro fugit nesciunt aliquam
+							ratione eum cumque architecto, excepturi doloribus necessitatibus beatae? Vitae, iusto ducimus! Ex eos
+							minus porro, deserunt reiciendis consectetur architecto officia autem quam nihil et inventore. Aperiam
+							officia tempore quaerat amet ab dolorum exercitationem sequi non soluta, nisi pariatur provident vel
+							laudantium unde doloribus reiciendis porro quasi eveniet numquam nostrum aliquid quos. Esse culpa odio
+							eos delectus cumque quam, reprehenderit rerum aperiam libero, non illum accusamus. Non corrupti,
+							corporis vero nam quibusdam nostrum eaque facere ipsa deleniti, qui molestiae porro obcaecati aliquid
+							temporibus dolor. Illo molestiae, id obcaecati reprehenderit nisi odio nesciunt laudantium excepturi
+							ad reiciendis, labore vel adipisci voluptate voluptatum sunt officiis recusandae quidem aliquam
+							suscipit, debitis ipsum et blanditiis. Magni ad labore cum, porro iusto quidem rerum dolores aut?
+							Minima qui necessitatibus officia impedit, sapiente odit, voluptatum rem sed libero provident
+							exercitationem distinctio deserunt quod hic ea tenetur voluptate eligendi magnam aperiam quis dolor.
+							Iusto tenetur accusantium beatae labore nostrum sapiente quidem quaerat eaque dicta dolore! Saepe cum
+							aspernatur, minima quos corrupti ipsa voluptatum consequuntur, reiciendis, porro culpa maxime.
+							Perspiciatis, ad voluptatem.
+						</div>
+					</div>
+				</div>
+				<button data-close type="button" class="popup__close">
+
+				</button>
+			</div>
+		</div>
+	</div>
+	<div id="loanterms_fl" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__text">
+					<div class="privacypolicy_popup popup_tb">
+						<div class="popup_top">
+							<div class="main_title">
+								Полные условия займа для ФЛ
+							</div>
+						</div>
+						<div class="popup_bottom">
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quia.</li>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quia.</li>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quia.</li>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quia.</li>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quia.</li>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quia.</li>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quia.</li>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quia.</li>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quia.</li>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quia.</li>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quia.</li>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quia.</li>
+						</div>
+					</div>
+				</div>
+				<button data-close type="button" class="popup__close">
+
+				</button>
+			</div>
+		</div>
+	</div>
+	<div id="popup-table" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__header popupTable-header">
+					<div class="popupTable-header__flex">
+						<input class="popupTable-header__Total" type="text" name="totalSumm" id="totalSummTable" readonly><label for="totalSumm">Сумма займа:</label>
+					</div>
+					<div class="popupTable-header__flex">
+						<input class="popupTable-header__Total" type="text" name="totalMonths" id="totalMonthsTable" readonly><label for="totalMonths">Период выплат займа:</label>
+					</div>
+					<div class="popupTable-header__flex">
+						<input class="popupTable-header__Total" type="text" name="popupProcent" id="popupProcentTable" readonly><label for="popupProcent">Процент: </label>
+					</div>
+				</div>
+				<div class="popup__chart popup-chart">
+					<table class="popup-chart__table">
+						<thead>
+							<th>Месяц</th>
+							<th>Платеж по процентам</th>
+							<th>Платеж по основному долгу</th>
+							<th>Остаток долга на конец периода</th>
+						</thead>
+
+						<tbody class="popup-chart__tbody">
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.js?_v=20220920163414"></script>
+</body>
+
+</html>
