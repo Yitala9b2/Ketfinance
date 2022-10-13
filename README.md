@@ -3,7 +3,7 @@
 Сайт для группы финансовых организаций, работающей в сфере залогового кредитования
 
 <p> тестовый домен:  https://u133935.test-handyhost.ru/  </p>
-<p> github pages:  https://u133935.test-handyhost.ru/  </p>
+<p> github pages:  https://yitala9b2.github.io/Ketfinance/  </p>
 
 <div  id="ladesign_description" align="center" >
   
