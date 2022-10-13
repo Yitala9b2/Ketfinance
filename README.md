@@ -3,6 +3,7 @@
 Сайт для группы финансовых организаций, работающей в сфере залогового кредитования
 
 <p> тестовый домен:  https://u133935.test-handyhost.ru/  </p>
+<p> github pages:  https://u133935.test-handyhost.ru/  </p>
 
 <div  id="ladesign_description" align="center" >
   
